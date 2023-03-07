@@ -6,6 +6,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { DiAptana } from "react-icons/di";
 import { FcReading } from "react-icons/fc";
 import { FcAdvance } from "react-icons/fc";
+import { FcFilledFilter } from "react-icons/fc";
 
 const Header = () => {
   return (
@@ -17,8 +18,14 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/link1"><FcReading/>Company Introduction</Nav.Link>
-            <Nav.Link href="/link2"><i className={DiAptana}/><FcAdvance/>Employee Login</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+            <Nav.Link href="/link2"><i className={DiAptana}/><FcAdvance/>Employee Login</Nav.Link>   
+            <NavDropdown 
+                title={
+                  <span>
+                    <i className='fad fa-newspaper'></i><FcFilledFilter/>Dropdown
+                  </span>
+                }
+                id='basic-nav-dropdown'>
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
