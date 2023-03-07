@@ -1,13 +1,14 @@
 import React from 'react'
-import products from '../TeaMember'
+import teamember from '../TeaMember'
 import { Row,Col } from 'react-bootstrap'
+import Teamember from '../components/Teamember'
 
 const HomeScreen = () => {
   return (
     <>
-        <Row>{products.map((products)=>(
+        <Row>{teamember.map((memberdata)=>(
                 <Col sm={12} md={6} lg={4} xl={4}>
-                <h3>{products.name}</h3>
+                    <Teamember memberdata={memberdata}/> 
                 </Col>
             ))}
         </Row>

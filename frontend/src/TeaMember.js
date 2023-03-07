@@ -1,4 +1,4 @@
-const products = [
+const memberdata = [
     {
         _id: '1',
         name: 'zxlcvk',
@@ -49,4 +49,4 @@ const products = [
     }
 ]
 
-export default products
+export default memberdata
