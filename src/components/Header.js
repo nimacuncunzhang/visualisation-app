@@ -7,13 +7,14 @@ import { DiAptana } from "react-icons/di";
 import { FcReading } from "react-icons/fc";
 import { FcAdvance } from "react-icons/fc";
 import { FcFilledFilter } from "react-icons/fc";
+import Logo from './logo.png';
 
 const Header = () => {
   return (
     <header>
     <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
       <Container>
-        <Navbar.Brand href="/">Visualisation app</Navbar.Brand>
+      <Navbar.Brand href="/"><img src={Logo} width={100} height={50} alt = "logo"/>Visualisation App</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
